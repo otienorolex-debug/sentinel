@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Link // Live Ad-Route Integrity Engine</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sentinel Link //</h1>
+        <p>Real-Time Async Ad-Route Integrity Engine</p>
+    </header>
+
+    <div class="dashboard-grid">
+        <!-- Control Deck Inputs -->
+        <div class="control-panel">
+            <div class="input-group">
+                <label>Target Campaign URLs (One per line)</label>
+                <textarea id="url-input" placeholder="https://github.com&#10;https://thisisadeadlink404.com"></textarea>
+            </div>
+            <div class="input-group">
+                <label>Average Cost-Per-Click (USD)</label>
+                <input type="number" id="cpc-input" value="1.50" step="0.01">
+            </div>
+            <div class="input-group">
+                <label>Estimated Daily Ad Clicks</label>
+                <input type="number" id="clicks-input" value="5000">
+            </div>
+            <button onclick="runAuditPipeline()">Execute Diagnostics Engine</button>
+
+            <div class="metrics-bar">
+                <div class="metric-card">
+                    <span>Failure Rate</span>
+                    <div id="failure-rate">0%</div>
+                </div>
+                <div class="metric-card">
+                    <span>Daily Financial Bleed</span>
+                    <div id="bleed-amount">$0.00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Output Real-Time UI -->
+        <div class="results-panel">
+            <label>Live Architectural Status Matrix</label>
+            <div id="matrix-output" class="matrix-grid">
+                <p style="color: #8b949e; font-style: italic; font-size: 0.85rem;">Awaiting target pipeline injection...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
